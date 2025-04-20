@@ -18,8 +18,8 @@ for element in task_1():
 #задача 2
 print ('задача 2')
 def task_2 (a:list =[1, 2, 3, 5, 8, 13, 21]) -> list:
-    return a
-print("task_2 = ", task_2()[0:3])
+    return a[0:3]
+print("task_2 = ", task_2())
 #последовательность - список
 
 
