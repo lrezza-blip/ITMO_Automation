@@ -1,20 +1,19 @@
 #задача 1
 print ('задача 1')
-a: int = 1
-b: float = 1.2
-c: str = 'строка'
-d: list = [1,2,3]
-e: bool = True
 
-def task_1(a: int,b: float,c: str,d: list,e: bool):
-    return a,b,c,d,e
-print (task_1(a,b,c,d,e))
-print(a, type(a))
-print(b, type(b))
-print(c, type(c))
-print(d, type(d))
-print(e, type(e))
 
+def task_1() -> tuple:
+    a: int = 1
+    b: float = 1.2
+    c: str = 'строка'
+    d: list = [1, 2, 3]
+    e: bool = True
+    return a, b, c, d, e
+
+task_1()
+print(task_1())
+for element in task_1():
+    print(element, type(element))
 
 #задача 2
 print ('задача 2')
